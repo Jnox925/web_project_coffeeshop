@@ -58,25 +58,13 @@
         />
 
         <div class="header__footer">
-          <ul class="header__list">
-            <li class="header__list-item">
-              <p class="header__paragraph">Horario:</p>
-            </li>
-            <li class="header__list-item">
-              <p class="header__paragraph">
-                Lunes a Viernes (de 10:00h a 19:00h)
-              </p>
-            </li>
-            <li class="header__list-item">
-              <p class="header__paragraph">
-                Sábados y Domingos (de 11:00h a 18:00h)
-              </p>
-            </li>
-          </ul>
+          <div>
+            <p class="header__paragraph">Horario:</p>
+            <p class="header__paragraph">Lunes a Viernes (de 10:00h a 19:00h)</p>
+            <p class="header__paragraph">Sábados y Domingos (de 11:00h a 18:00h)</p>
+          </div>
 
-          <p class="header__paragraph header__address">
-            Avenida del Éxito 200, Ciudad Triple Peaks
-          </p>
+          <p class="header__paragraph header__address">Avenida del Éxito 200, Ciudad Triple Peaks</p>
         </div>
       </header>
 
@@ -122,7 +110,70 @@
           </div>
         </section>
 
-        <section class="content__reservation" id="reservation"></section>
+        <section class="content__reservation" id="reservation">
+          <h2 class="content__reservation__title">Reservar una mesa</h1>
+
+          <form class="reservation__form">
+
+            <label class="form__label" for="nombre">Nombre*</label>
+            <input
+              type="text"
+              class="form__input"
+              minlength="3"
+              maxlength="20"
+              required
+              placeholder="Nombre"
+              id="nombre"
+            />
+
+            <label class="form__label" for="comensales"
+              >Número de comensales *</label
+            >
+            <input
+              type="number"
+              class="form__input"
+              min="1"
+              max="8"
+              required
+              placeholder="1-8"
+              id="comensales"
+            />
+
+            <label class="form__label" for="date">Fecha y hora *</label>
+            <input
+              type="datetime-local"
+              class="form__input"
+              required
+
+              id="date"
+            />
+
+            <label class="form__label" for="correoElectrónico"
+              >Tu correo electrónico *</label
+            >
+            <input
+              type="email"
+              class="form__input"
+              required
+              placeholder="email@email.com"
+              id="correoElectrónico"
+            />
+            <div class="form__buttons">
+              <button type="submit" class="form__buttons form__buttons--submit">
+                Reservar una mesa
+              </button>
+            </div>
+
+            <div class="form__checkbox">
+              <input
+                type="checkbox"
+                id="términos"
+                class="form__checkbox-input"
+              />
+              <label for="términos" class="form__label">Acepto los términos de uso</label>
+            </div>
+          </form>
+        </section>
       </main>
       <footer class="footer" id="footer"></footer>
     </div>
