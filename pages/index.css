@@ -250,7 +250,7 @@
   line-height: 20px;
 }
 
-.form__button_submit {
+.form__button--submit {
   padding: 14px 20px;
   background: #2f80ed;
   border: none;
