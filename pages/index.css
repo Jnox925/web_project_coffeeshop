@@ -1,4 +1,16 @@
-.page {
+@import url("../blocks/page.css")
+@import url("../blocks/header.css")
+@import url("../blocks/nav.css")
+@import url("../blocks/recipes.css")
+@import url("../blocks/reservation.css")
+@import url("../blocks/form.css")
+@import url("../blocks/footer.css")
+
+
+
+
+
+/*.page {
   min-width: 1100px;
   max-width: 1600px;
   margin: 0 auto;
@@ -9,7 +21,8 @@
 
 /* --- SECCIÓN HEADER --- */
 
-.header {
+
+/*.header {
   display: flex;
   flex-direction: column;
   position: relative; /* Necesario para que la posición absoluta de la imagen sea relativa a este bloque */
@@ -25,7 +38,7 @@
   box-sizing: border-box;
 }
 
-.nav {
+/*.nav {
   display: flex;
   justify-content: space-between;
 }
@@ -37,7 +50,7 @@
   left: -20px; /* Desplazamiento adicional para que el logo esté más a la izquierda */
 }
 
-.nav__links {
+/*.nav__links {
   display: flex;
   column-gap: 20px;
   list-style-type: none;
@@ -51,8 +64,6 @@
   font-weight: bold;
 }
 
-/* Se eliminó header__content y sus estilos, ya que el diseño usa posicionamiento absoluto para la imagen [cite: 106] */
-
 .header__title {
   font-family: "Noto Serif", "Times New Roman", serif; /* Tipografía [cite: 148, 165] */
   font-style: normal;
@@ -64,23 +75,23 @@
   letter-spacing: -1px; /* Espaciado de letras [cite: 147] */
 }
 
-.span-accent {
+/*.span-accent {
   font-family: "Inter", Arial, sans-serif; /* Tipografía para el acento [cite: 142, 164] */
   font-style: normal;
   font-weight: 500;
   font-size: 62px;
   line-height: 76px;
   color: #2f80ed; /* Color de acento (azul) [cite: 23] */
-}
+}*/
 
-.header__description {
+/*.header__description {
   font-size: 20px;
   line-height: 30px;
   max-width: 515px;
   margin: 32px 0 0; /* Margen superior de 32px [cite: 90] */
 }
 
-.header__image {
+/*.header__image {
   max-width: 646px; /* Ancho máximo de 646px [cite: 100] */
   max-height: 560px; /* Altura máxima para la imagen, ajustado de 568px [cite: 100] */
   position: absolute; /* Posicionamiento absoluto  */
@@ -262,3 +273,4 @@
 .checkbox-label {
   margin-top: 20px;
 }
+*/
