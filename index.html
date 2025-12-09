@@ -11,7 +11,6 @@
     />
     <meta name="keywords" content="Restaurante, Platos a la carta" />
     <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -75,7 +74,6 @@
             Echa un vistazo a las recetas que hemos <br />
             reunido para que elabores tus propios snacks.
           </p>
-
           <div class="recipes__videos">
             <div class="recipes__video-item">
               <iframe
@@ -159,8 +157,9 @@
               placeholder="email@email.com"
               id="correoElectrónico"
             />
-            <div class="form__button" >
-              <button type="submit" class="form__button form__button--submit">
+
+            <div class="form__button">
+              <button type="submit" class="form__button-submit">
                 Reservar una mesa
               </button>
             </div>
@@ -178,7 +177,48 @@
 
 
       </main>
-      <footer class="footer" id="footer"></footer>
+      <footer class="footer" id="footer">
+
+              <footer class="footer" id="contactos">
+        <div class="footer__circle"></div>
+
+        <div class="footer__content">
+          <div class="footer__logo">
+            <img
+              src="./images/logo_coffeeshop_light.svg"
+              alt="Logotipo de Triple Espresso"
+              class="footer__logo"
+            />
+          </div>
+          <div class="footer__social">
+            <h4 class="footer__social-heading">Redes sociales</h4>
+
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#" class="footer__social-link">
+                  <img
+                    src="./images/facebook_white.svg"
+                    alt="Icono de Facebook"
+                    class="footer__social-icon"
+                  />
+                  Facebook
+
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__social-link">
+                  <img
+                    src="./images/instagram_white.svg"
+                    alt="Icono de Instagram"
+                    class="footer__social-icon"
+                  />
+                  Instagram
+
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </footer>
     </div>
   </body>
 </html>
