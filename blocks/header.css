@@ -2,61 +2,61 @@
 .header {
   display: flex;
   flex-direction: column;
-  position: relative; /* Necesario para que la posición absoluta de la imagen sea relativa a este bloque */
-  min-height: 720px; /* Altura mínima: 720px [cite: 109] */
-  max-height: 800px; /* Altura máxima: 800px [cite: 109] */
-  height: 100vh; /* Altura de la pantalla normal: 100vh [cite: 110] */
+  position: relative;
+  min-height: 720px;
+  max-height: 800px;
+  height: 100vh;
   background-color: #ffffff;
   background-image: url("/images/background_header.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 30px 80px 40px; /* Padding de 30px arriba/lados, 40px abajo [cite: 79, 81, 93, 101] */
+  padding: 30px 80px 40px;
   box-sizing: border-box;
 }
 
 .header__title {
-  font-family: "Noto Serif", "Times New Roman", serif; /* Tipografía [cite: 148, 165] */
+  font-family: "Noto Serif", "Times New Roman", serif;
   font-style: normal;
-  font-weight: 900; /* Asumiendo 900 de la fuente principal si no se especifica explícitamente [cite: 144] */
+  font-weight: 900;
   font-size: 62px;
   line-height: 76px;
   max-width: 635px;
-  margin: 183px 0 0; /* Margen superior de 183px [cite: 84] */
-  letter-spacing: -1px; /* Espaciado de letras [cite: 147] */
+  margin: 183px 0 0;
+  letter-spacing: -1px;
 }
 
 .span-accent {
-  font-family: "Inter", Arial, sans-serif; /* Tipografía para el acento [cite: 142, 164] */
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 62px;
   line-height: 76px;
-  color: #2f80ed; /* Color de acento (azul) [cite: 23] */
+  color: #2f80ed;
 }
 
 .header__description {
   font-size: 20px;
   line-height: 30px;
   max-width: 515px;
-  margin: 32px 0 0; /* Margen superior de 32px [cite: 90] */
+  margin: 32px 0 0;
 }
 
 .header__image {
-  max-width: 646px; /* Ancho máximo de 646px [cite: 100] */
-  max-height: 560px; /* Altura máxima para la imagen, ajustado de 568px [cite: 100] */
-  position: absolute; /* Posicionamiento absoluto  */
-  bottom: 0; /* Ubicado en la parte inferior */
-  right: 0; /* Ubicado en la parte derecha */
+  max-width: 646px;
+  max-height: 560px;
+  position: absolute;
+  bottom: 0;
+  right: 0; /
 }
 
 .header__footer {
-  margin-top: auto; /* Empuja el footer hacia la parte inferior del contenedor flexible (.header) [cite: 116] */
+  margin-top: auto;
   width: 100%;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  color: #6f6f6f; /* Color para horarios y dirección [cite: 25] */
+  color: #6f6f6f;
 }
 
 .footer__list {
